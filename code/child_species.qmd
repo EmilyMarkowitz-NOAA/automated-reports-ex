@@ -1,0 +1,93 @@
+
+<!-- This child doc will, unless otherwise specified, -->
+<!-- inherit all of the formatting of the parent qmd -->
+
+<!-- Note that the double curly brackets {{ }} can be used to inherit content from the global environment -->
+
+```{r loop-{{jj}}}
+dat0_spp <- dat0 %>% 
+  dplyr::filter(species_code == {{jj}})
+spp0 <- dat0_spp$scientific_name[1]
+spp1 <- paste0("_", spp0)
+spp1 <- ifelse(substr(x = spp1, start = nchar(spp1)-2, stop = nchar(spp1)) == "sp.", 
+               gsub(x = spp1, pattern = " ", replacement = "_ "), 
+               paste0(spp1, "_"))
+```
+
+## **`r spp1`**
+
+The geographic distribution of `r spp1` (species code: {{jj}}) (@fig-map-{{params$report_year}}-{{jj}}), and the raw data that went into that map (@tbl-raw-{{params$report_year}}-{{jj}}). 
+
+```{r}
+#| label: fig-map-{{params$report_year}}-{{jj}}
+#| fig-cap: !expr paste0("Map of different ", spp1, " snailfish distributions in {{params$report_year}}. ")
+
+# Create map
+pp <- ggplot2::ggplot() +
+
+  ggplot2::geom_sf( # Alaska land shapefiles
+    data = reg_dat$akland,
+    color = NA,
+    fill = "grey50")  +
+  
+  ggplot2::geom_sf( # Graticule line shapefiles
+    data = reg_dat$graticule,
+    color = "grey80",
+    alpha = 0.2) +
+  
+  ggplot2::geom_sf( # Survey area shapefile
+    data = reg_dat$survey.area,
+    mapping = aes(fill = SURVEY,
+                  geometry = geometry),
+    alpha = .5, 
+    size = 1) + 
+  ggplot2::scale_fill_grey(start = .6, end = .9) +
+  
+  ggplot2::geom_sf( # Species data
+    data = dat0_spp, 
+    mapping = aes(#color = scientific_name, 
+                  size = as.numeric(cpue_kgkm2)), 
+    alpha = .5,
+    shape = 16) + 
+  # ggplot2::scale_color_viridis_d(option = "G", end = .8, alpha = .5) +
+  
+  # Manage Axis extents (limits) and breaks
+  ggplot2::scale_y_continuous(
+    name = "",
+    limits = reg_dat$plot.boundary$y, 
+    breaks = reg_dat$lat.breaks) +
+  ggplot2::scale_x_continuous(
+    name = "",
+    limits = reg_dat$plot.boundary$x, 
+    breaks = reg_dat$lon.breaks) + 
+  
+  ggplot2::ggtitle( # plot title
+    label = paste0(spp0, " Snailfish Presence in ", {{params$report_year}}), 
+    subtitle = "Source: https://www.fisheries.noaa.gov/foss")  +
+
+  # Aesthetics
+  ggplot2::guides(fill = "none", 
+                  size = guide_legend(title="CPUE (kg/km2)")) +
+  ggplot2::theme_bw()
+
+pp
+```
+
+```{r}
+#| label: tbl-raw-{{params$report_year}}-{{jj}}
+#| tbl-cap: !expr paste0("Table of ", spp1," catch-per-unit-effort in {{params$report_year}}. ")
+
+tab <- dat0_spp %>%  # subset data to the row of interest
+  dplyr::select(stratum, station, vessel_name, date_time, 
+                cpue_kgkm2, cpue_nokm2, weight_kg, count, 
+                bottom_temperature_c, surface_temperature_c, depth_m)  %>% 
+  dplyr::mutate( 
+    dplyr::across(c("cpue_kgkm2", "cpue_nokm2", "weight_kg", "count", 
+          "bottom_temperature_c", "surface_temperature_c", "depth_m"), as.numeric) , 
+    dplyr::across(is.numeric, round, digits = 2), 
+    stratum = as.character(as.numeric(stratum))) %>% 
+  gt::gt()
+
+tab
+```
+

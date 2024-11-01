@@ -1,0 +1,3159 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Snailfish found in the Eastern Bering Sea in 2022</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="parent_files/libs/clipboard/clipboard.min.js"></script>
+<script src="parent_files/libs/quarto-html/quarto.js"></script>
+<script src="parent_files/libs/quarto-html/popper.min.js"></script>
+<script src="parent_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="parent_files/libs/quarto-html/anchor.min.js"></script>
+<link href="parent_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="parent_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="parent_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="parent_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="parent_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="parent_files/libs/quarto-diagram/mermaid.min.js"></script>
+<script src="parent_files/libs/quarto-diagram/mermaid-init.js"></script>
+<link href="parent_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="parent.docx"><i class="bi bi-file-word"></i>MS Word</a></li><li><a href="parent.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Snailfish found in the Eastern Bering Sea in 2022</h1>
+<p class="subtitle lead">DRAFT: November 01, 2024</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<!-- This should work the same as the next chunk: -->
+<!-- {{< include _child_intro.qmd >}} -->
+<!-- This child doc will, unless otherwise specified, -->
+<!-- inherit all of the formatting of the parent qmd -->
+<!-- Note that the double curly brackets  can be used to inherit content from the global environment -->
+<p>This report compares the distribution and relative abundance of 3 snailfish species (specifically, Careproctus sp., Liparis sp., Crystallichthys cyclospilus; <a href="#fig-snailfish">Figure&nbsp;1</a>) with maps from the 2022 in the eastern Bering sea shelf bottom trawl survey. Survey results reported herein include estimates of catch-per-unit-effort for most snailfishes and geographic distributions (<a href="#fig-map-all-spp-2022">Figure&nbsp;2</a>); <span class="citation" data-cites="2022NEBS2023">Markowitz et al. (<a href="#ref-2022NEBS2023" role="doc-biblioref">2023</a>)</span>). In 2022, snail fish were caught at 102 stations. Data is publicly available from the Fisheries One Stop Shop <span class="citation" data-cites="FOSSAFSCData">(<a href="#ref-FOSSAFSCData" role="doc-biblioref">NOAA Fisheries Alaska Fisheries Science Center, 2024</a>)</span>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-snailfish" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="https://raw.githubusercontent.com/afsc-gap-products/gap_bs_data_report/refs/heads/main/img/snailfishes-crop.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;1: A photo of snailfishes.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<!-- !expr allows you to use an expression in the captions -->
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-map-all-spp-2022" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="parent_files/figure-html/fig-map-all-spp-2022-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;2: Map of different snailfish species distributions in 2022.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<section id="methods" class="level1">
+<h1>Methods</h1>
+<p>Quarto has support for some fancy accessories that are helpful for reports. For example, you can create flowcharts using tools like <code>{mermaid}</code>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  A[Survey data] --&gt; B(Processed data products)
+  B --&gt; C{R code and Markdown}
+  C --&gt; D[Presentations]
+  C --&gt; E[Data process reports]
+</pre>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="species-chapters" class="level1">
+<h1>Species chapters</h1>
+<!-- This child doc will, unless otherwise specified, -->
+<!-- inherit all of the formatting of the parent qmd -->
+<!-- Note that the double curly brackets  can be used to inherit content from the global environment -->
+<section id="liparis-sp." class="level2">
+<h2 class="anchored" data-anchor-id="liparis-sp."><strong><em>Liparis</em> sp.</strong></h2>
+<p>The geographic distribution of <em>Liparis</em> sp. (species code: 22201) (<a href="#fig-map-2022-22201">Figure&nbsp;3</a>), and the raw data that went into that map (<a href="#tbl-raw-2022-22201">Table&nbsp;1</a>).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-map-2022-22201" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="parent_files/figure-html/fig-map-2022-22201-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;3: Map of different <em>Liparis</em> sp. snailfish distributions in 2022.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-raw-2022-22201" class="anchored">
+
+<div id="fxykgxovpx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#fxykgxovpx table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#fxykgxovpx thead, #fxykgxovpx tbody, #fxykgxovpx tfoot, #fxykgxovpx tr, #fxykgxovpx td, #fxykgxovpx th {
+  border-style: none;
+}
+
+#fxykgxovpx p {
+  margin: 0;
+  padding: 0;
+}
+
+#fxykgxovpx .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#fxykgxovpx .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#fxykgxovpx .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#fxykgxovpx .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#fxykgxovpx .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#fxykgxovpx .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#fxykgxovpx .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#fxykgxovpx .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#fxykgxovpx .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#fxykgxovpx .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#fxykgxovpx .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#fxykgxovpx .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#fxykgxovpx .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#fxykgxovpx .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#fxykgxovpx .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#fxykgxovpx .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#fxykgxovpx .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#fxykgxovpx .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#fxykgxovpx .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#fxykgxovpx .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#fxykgxovpx .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#fxykgxovpx .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#fxykgxovpx .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#fxykgxovpx .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#fxykgxovpx .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#fxykgxovpx .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#fxykgxovpx .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#fxykgxovpx .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#fxykgxovpx .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#fxykgxovpx .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#fxykgxovpx .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#fxykgxovpx .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#fxykgxovpx .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#fxykgxovpx .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#fxykgxovpx .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#fxykgxovpx .gt_left {
+  text-align: left;
+}
+
+#fxykgxovpx .gt_center {
+  text-align: center;
+}
+
+#fxykgxovpx .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#fxykgxovpx .gt_font_normal {
+  font-weight: normal;
+}
+
+#fxykgxovpx .gt_font_bold {
+  font-weight: bold;
+}
+
+#fxykgxovpx .gt_font_italic {
+  font-style: italic;
+}
+
+#fxykgxovpx .gt_super {
+  font-size: 65%;
+}
+
+#fxykgxovpx .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#fxykgxovpx .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#fxykgxovpx .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#fxykgxovpx .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#fxykgxovpx .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#fxykgxovpx .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#fxykgxovpx .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#fxykgxovpx .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#fxykgxovpx div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false"><caption>Table&nbsp;1:  <p>Table of <em>Liparis</em> sp. catch-per-unit-effort in 2022.</p> </caption>
+  <thead>
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="stratum">stratum</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="station">station</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="vessel_name">vessel_name</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="date_time">date_time</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="cpue_kgkm2">cpue_kgkm2</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="cpue_nokm2">cpue_nokm2</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="weight_kg">weight_kg</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="count">count</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="bottom_temperature_c">bottom_temperature_c</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="surface_temperature_c">surface_temperature_c</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="depth_m">depth_m</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="geometry">geometry</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="stratum" class="gt_row gt_right">43</td>
+<td headers="station" class="gt_row gt_left">P-25</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-17T07:27:16Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">51.12</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">72.72</td>
+<td headers="weight_kg" class="gt_row gt_right">1.41</td>
+<td headers="count" class="gt_row gt_right">2</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">0.1</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.0</td>
+<td headers="depth_m" class="gt_row gt_right">75</td>
+<td headers="geometry" class="gt_row gt_center">c(-1059042.80764475, 1268011.7070246)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">43</td>
+<td headers="station" class="gt_row gt_left">PO2524</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-18T07:35:43Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">9.30</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">18.82</td>
+<td headers="weight_kg" class="gt_row gt_right">0.49</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-0.5</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.0</td>
+<td headers="depth_m" class="gt_row gt_right">80</td>
+<td headers="geometry" class="gt_row gt_center">c(-1042380.23123828, 1243729.16936759)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">82</td>
+<td headers="station" class="gt_row gt_left">U-28</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-27T18:36:25Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">2.77</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">84.49</td>
+<td headers="weight_kg" class="gt_row gt_right">0.16</td>
+<td headers="count" class="gt_row gt_right">5</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-1.5</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">7.9</td>
+<td headers="depth_m" class="gt_row gt_right">95</td>
+<td headers="geometry" class="gt_row gt_center">c(-1129412.30882487, 1485763.88572074)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">82</td>
+<td headers="station" class="gt_row gt_left">V-28</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-28T07:25:46Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">1.99</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">51.55</td>
+<td headers="weight_kg" class="gt_row gt_right">0.12</td>
+<td headers="count" class="gt_row gt_right">3</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-1.6</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.3</td>
+<td headers="depth_m" class="gt_row gt_right">93</td>
+<td headers="geometry" class="gt_row gt_center">c(-1120793.98108651, 1522212.3609948)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">82</td>
+<td headers="station" class="gt_row gt_left">V-26</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-28T12:38:25Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">14.90</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">81.45</td>
+<td headers="weight_kg" class="gt_row gt_right">0.73</td>
+<td headers="count" class="gt_row gt_right">4</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-1.3</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.4</td>
+<td headers="depth_m" class="gt_row gt_right">73</td>
+<td headers="geometry" class="gt_row gt_center">c(-1056269.65323651, 1500680.32601684)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">71</td>
+<td headers="station" class="gt_row gt_left">BB-07</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-02T16:05:23Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">2.61</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">23.75</td>
+<td headers="weight_kg" class="gt_row gt_right">0.11</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">10.8</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">14.2</td>
+<td headers="depth_m" class="gt_row gt_right">17</td>
+<td headers="geometry" class="gt_row gt_center">c(-480028.837316863, 1595035.74370666)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">71</td>
+<td headers="station" class="gt_row gt_left">CC-07</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-03T07:11:04Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.02</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">21.94</td>
+<td headers="weight_kg" class="gt_row gt_right">0.00</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">11.2</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">13.6</td>
+<td headers="depth_m" class="gt_row gt_right">18</td>
+<td headers="geometry" class="gt_row gt_center">c(-472224.228469961, 1632385.79164518)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">71</td>
+<td headers="station" class="gt_row gt_left">BB-03</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-06T10:59:19Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.09</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">21.82</td>
+<td headers="weight_kg" class="gt_row gt_right">0.00</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">3.7</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">7.6</td>
+<td headers="depth_m" class="gt_row gt_right">32</td>
+<td headers="geometry" class="gt_row gt_center">c(-620490.79265254, 1619298.86333675)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">71</td>
+<td headers="station" class="gt_row gt_left">CC-03</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-06T13:45:21Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.30</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">42.93</td>
+<td headers="weight_kg" class="gt_row gt_right">0.01</td>
+<td headers="count" class="gt_row gt_right">2</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">4.4</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">10.1</td>
+<td headers="depth_m" class="gt_row gt_right">28</td>
+<td headers="geometry" class="gt_row gt_center">c(-615677.09485688, 1654995.72133119)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">71</td>
+<td headers="station" class="gt_row gt_left">CC-02</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-06T16:45:47Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.14</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">347.09</td>
+<td headers="weight_kg" class="gt_row gt_right">0.01</td>
+<td headers="count" class="gt_row gt_right">15</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">2.7</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">6.9</td>
+<td headers="depth_m" class="gt_row gt_right">31</td>
+<td headers="geometry" class="gt_row gt_center">c(-650172.569179712, 1665934.69921796)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">71</td>
+<td headers="station" class="gt_row gt_left">BB-02</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-07T12:53:26Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">10.79</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">43.52</td>
+<td headers="weight_kg" class="gt_row gt_right">0.50</td>
+<td headers="count" class="gt_row gt_right">2</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">3.6</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">7.9</td>
+<td headers="depth_m" class="gt_row gt_right">33</td>
+<td headers="geometry" class="gt_row gt_center">c(-658238.292185713, 1629882.57478877)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">71</td>
+<td headers="station" class="gt_row gt_left">AA-02</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-07T15:46:12Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.27</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">66.79</td>
+<td headers="weight_kg" class="gt_row gt_right">0.01</td>
+<td headers="count" class="gt_row gt_right">3</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">4.0</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">7.4</td>
+<td headers="depth_m" class="gt_row gt_right">28</td>
+<td headers="geometry" class="gt_row gt_center">c(-665334.74931865, 1592751.09932128)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">31</td>
+<td headers="station" class="gt_row gt_left">D-06</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-06-12T17:43:26Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.13</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">21.02</td>
+<td headers="weight_kg" class="gt_row gt_right">0.01</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">2.7</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.5</td>
+<td headers="depth_m" class="gt_row gt_right">94</td>
+<td headers="geometry" class="gt_row gt_center">c(-657824.148545411, 714130.447094713)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">70</td>
+<td headers="station" class="gt_row gt_left">Y-18</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-08T07:18:51Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.14</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">23.78</td>
+<td headers="weight_kg" class="gt_row gt_right">0.01</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">0.6</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">6.4</td>
+<td headers="depth_m" class="gt_row gt_right">39</td>
+<td headers="geometry" class="gt_row gt_center">c(-747739.186413821, 1516192.6967745)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">70</td>
+<td headers="station" class="gt_row gt_left">X-19</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-08T14:04:38Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">1.53</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">358.11</td>
+<td headers="weight_kg" class="gt_row gt_right">0.06</td>
+<td headers="count" class="gt_row gt_right">15</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">0.5</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">5.8</td>
+<td headers="depth_m" class="gt_row gt_right">39</td>
+<td headers="geometry" class="gt_row gt_center">c(-791410.46325094, 1503298.88810338)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">70</td>
+<td headers="station" class="gt_row gt_left">X-20</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-08T17:44:40Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">8.73</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">44.98</td>
+<td headers="weight_kg" class="gt_row gt_right">0.39</td>
+<td headers="count" class="gt_row gt_right">2</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-0.3</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">6.5</td>
+<td headers="depth_m" class="gt_row gt_right">42</td>
+<td headers="geometry" class="gt_row gt_center">c(-822811.314589114, 1513809.13581876)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">70</td>
+<td headers="station" class="gt_row gt_left">W-20</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-09T07:40:35Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.52</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">90.48</td>
+<td headers="weight_kg" class="gt_row gt_right">0.02</td>
+<td headers="count" class="gt_row gt_right">4</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">0.7</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">7.5</td>
+<td headers="depth_m" class="gt_row gt_right">40</td>
+<td headers="geometry" class="gt_row gt_center">c(-833068.437924454, 1477042.27115512)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">70</td>
+<td headers="station" class="gt_row gt_left">W-19</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-09T10:14:03Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.35</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">47.11</td>
+<td headers="weight_kg" class="gt_row gt_right">0.01</td>
+<td headers="count" class="gt_row gt_right">2</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">1.5</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">7.0</td>
+<td headers="depth_m" class="gt_row gt_right">35</td>
+<td headers="geometry" class="gt_row gt_center">c(-798497.39570334, 1470006.35433251)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">70</td>
+<td headers="station" class="gt_row gt_left">X-01</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-10T07:40:08Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.29</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">23.85</td>
+<td headers="weight_kg" class="gt_row gt_right">0.01</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">3.3</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">6.3</td>
+<td headers="depth_m" class="gt_row gt_right">33</td>
+<td headers="geometry" class="gt_row gt_center">c(-721201.769059206, 1486703.96242506)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">70</td>
+<td headers="station" class="gt_row gt_left">Y-01</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-10T10:27:14Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.92</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">96.68</td>
+<td headers="weight_kg" class="gt_row gt_right">0.04</td>
+<td headers="count" class="gt_row gt_right">4</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">1.7</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">6.0</td>
+<td headers="depth_m" class="gt_row gt_right">39</td>
+<td headers="geometry" class="gt_row gt_center">c(-713285.53162156, 1521547.43895102)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">71</td>
+<td headers="station" class="gt_row gt_left">AA-01</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-10T16:50:05Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">24.30</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">141.57</td>
+<td headers="weight_kg" class="gt_row gt_right">1.03</td>
+<td headers="count" class="gt_row gt_right">6</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">2.5</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">6.8</td>
+<td headers="depth_m" class="gt_row gt_right">31</td>
+<td headers="geometry" class="gt_row gt_center">c(-700909.363283891, 1596338.67495402)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">70</td>
+<td headers="station" class="gt_row gt_left">Y-02</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-12T18:37:08Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.40</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">70.57</td>
+<td headers="weight_kg" class="gt_row gt_right">0.02</td>
+<td headers="count" class="gt_row gt_right">3</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">3.9</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">7.8</td>
+<td headers="depth_m" class="gt_row gt_right">34</td>
+<td headers="geometry" class="gt_row gt_center">c(-675583.769553064, 1515332.34759325)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">31</td>
+<td headers="station" class="gt_row gt_left">J-03</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-06-23T07:26:50Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.30</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">79.28</td>
+<td headers="weight_kg" class="gt_row gt_right">0.01</td>
+<td headers="count" class="gt_row gt_right">4</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">0.6</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">7.1</td>
+<td headers="depth_m" class="gt_row gt_right">62</td>
+<td headers="geometry" class="gt_row gt_center">c(-734159.480383881, 960099.768227258)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">32</td>
+<td headers="station" class="gt_row gt_left">F-20</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-06-30T11:42:36Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.44</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">57.37</td>
+<td headers="weight_kg" class="gt_row gt_right">0.02</td>
+<td headers="count" class="gt_row gt_right">3</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">4.1</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">5.7</td>
+<td headers="depth_m" class="gt_row gt_right">79</td>
+<td headers="geometry" class="gt_row gt_center">c(-944341.201559931, 852335.974518374)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">70</td>
+<td headers="station" class="gt_row gt_left">S-18</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-16T15:37:42Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.13</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">22.34</td>
+<td headers="weight_kg" class="gt_row gt_right">0.01</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">8.0</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.0</td>
+<td headers="depth_m" class="gt_row gt_right">37</td>
+<td headers="geometry" class="gt_row gt_center">c(-787921.415725226, 1315297.5438203)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">81</td>
+<td headers="station" class="gt_row gt_left">W-25</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-29T10:12:27Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">4.86</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">19.12</td>
+<td headers="weight_kg" class="gt_row gt_right">0.25</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-1.3</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.4</td>
+<td headers="depth_m" class="gt_row gt_right">64</td>
+<td headers="geometry" class="gt_row gt_center">c(-1008666.18682244, 1524893.27919342)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">81</td>
+<td headers="station" class="gt_row gt_left">W-26</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-29T13:12:27Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">12.02</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">58.73</td>
+<td headers="weight_kg" class="gt_row gt_right">0.61</td>
+<td headers="count" class="gt_row gt_right">3</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-1.5</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.5</td>
+<td headers="depth_m" class="gt_row gt_right">71</td>
+<td headers="geometry" class="gt_row gt_center">c(-1045113.72194105, 1535655.62443648)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">81</td>
+<td headers="station" class="gt_row gt_left">W-27</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-29T16:02:49Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">3.30</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">107.48</td>
+<td headers="weight_kg" class="gt_row gt_right">0.18</td>
+<td headers="count" class="gt_row gt_right">6</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-1.6</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.4</td>
+<td headers="depth_m" class="gt_row gt_right">78</td>
+<td headers="geometry" class="gt_row gt_center">c(-1079677.74576938, 1547519.1245308)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">81</td>
+<td headers="station" class="gt_row gt_left">X-26</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-30T07:18:16Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">2.57</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">53.56</td>
+<td headers="weight_kg" class="gt_row gt_right">0.14</td>
+<td headers="count" class="gt_row gt_right">3</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-1.6</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.4</td>
+<td headers="depth_m" class="gt_row gt_right">73</td>
+<td headers="geometry" class="gt_row gt_center">c(-1040098.8502071, 1573413.22032253)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">81</td>
+<td headers="station" class="gt_row gt_left">X-25</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-30T10:06:11Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.11</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">18.90</td>
+<td headers="weight_kg" class="gt_row gt_right">0.01</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-1.5</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.4</td>
+<td headers="depth_m" class="gt_row gt_right">70</td>
+<td headers="geometry" class="gt_row gt_center">c(-1005769.37702732, 1562265.33634886)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">81</td>
+<td headers="station" class="gt_row gt_left">X-24</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-30T13:09:25Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">13.98</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">37.78</td>
+<td headers="weight_kg" class="gt_row gt_right">0.74</td>
+<td headers="count" class="gt_row gt_right">2</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-1.5</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">7.9</td>
+<td headers="depth_m" class="gt_row gt_right">64</td>
+<td headers="geometry" class="gt_row gt_center">c(-965453.645388711, 1550527.74372042)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">71</td>
+<td headers="station" class="gt_row gt_left">EE-02</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-04T09:31:58Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">1.66</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">155.22</td>
+<td headers="weight_kg" class="gt_row gt_right">0.07</td>
+<td headers="count" class="gt_row gt_right">7</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">4.8</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.9</td>
+<td headers="depth_m" class="gt_row gt_right">32</td>
+<td headers="geometry" class="gt_row gt_center">c(-637572.025425063, 1733820.11523013)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">71</td>
+<td headers="station" class="gt_row gt_left">FF-02</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-04T12:23:30Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.11</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">22.97</td>
+<td headers="weight_kg" class="gt_row gt_right">0.00</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">6.6</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">9.0</td>
+<td headers="depth_m" class="gt_row gt_right">39</td>
+<td headers="geometry" class="gt_row gt_center">c(-633945.340225883, 1771445.13607069)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">71</td>
+<td headers="station" class="gt_row gt_left">FF-01</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-04T14:48:54Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">40.13</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">236.08</td>
+<td headers="weight_kg" class="gt_row gt_right">1.87</td>
+<td headers="count" class="gt_row gt_right">11</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">2.2</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">6.8</td>
+<td headers="depth_m" class="gt_row gt_right">53</td>
+<td headers="geometry" class="gt_row gt_center">c(-665759.564907541, 1781234.53062379)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">71</td>
+<td headers="station" class="gt_row gt_left">FF-18</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-04T17:25:27Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">33.13</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">171.99</td>
+<td headers="weight_kg" class="gt_row gt_right">1.54</td>
+<td headers="count" class="gt_row gt_right">8</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">1.6</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">6.5</td>
+<td headers="depth_m" class="gt_row gt_right">53</td>
+<td headers="geometry" class="gt_row gt_center">c(-690640.633336638, 1774866.56829901)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">71</td>
+<td headers="station" class="gt_row gt_left">EE-19</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-05T07:17:32Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">13.03</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">187.92</td>
+<td headers="weight_kg" class="gt_row gt_right">0.62</td>
+<td headers="count" class="gt_row gt_right">9</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">0.9</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">3.4</td>
+<td headers="depth_m" class="gt_row gt_right">50</td>
+<td headers="geometry" class="gt_row gt_center">c(-742395.921075414, 1761125.0687478)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">71</td>
+<td headers="station" class="gt_row gt_left">EE-18</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-05T10:10:15Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">1.30</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">39.92</td>
+<td headers="weight_kg" class="gt_row gt_right">0.06</td>
+<td headers="count" class="gt_row gt_right">2</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">1.5</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">4.9</td>
+<td headers="depth_m" class="gt_row gt_right">48</td>
+<td headers="geometry" class="gt_row gt_center">c(-707962.389352982, 1753422.12513369)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">71</td>
+<td headers="station" class="gt_row gt_left">EE-01</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-05T13:23:55Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">11.03</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">20.06</td>
+<td headers="weight_kg" class="gt_row gt_right">0.55</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">2.8</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">6.9</td>
+<td headers="depth_m" class="gt_row gt_right">44</td>
+<td headers="geometry" class="gt_row gt_center">c(-671701.7112668, 1744811.17062906)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">71</td>
+<td headers="station" class="gt_row gt_left">DD-01</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-05T16:22:43Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.57</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">68.98</td>
+<td headers="weight_kg" class="gt_row gt_right">0.03</td>
+<td headers="count" class="gt_row gt_right">3</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">3.6</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">5.8</td>
+<td headers="depth_m" class="gt_row gt_right">40</td>
+<td headers="geometry" class="gt_row gt_center">c(-680234.616254987, 1708945.73213664)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">71</td>
+<td headers="station" class="gt_row gt_left">DD-18</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-06T07:16:37Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.29</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">20.77</td>
+<td headers="weight_kg" class="gt_row gt_right">0.01</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">1.8</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">5.9</td>
+<td headers="depth_m" class="gt_row gt_right">44</td>
+<td headers="geometry" class="gt_row gt_center">c(-716635.762570196, 1714208.40489457)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">71</td>
+<td headers="station" class="gt_row gt_left">CC-18</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-06T10:01:11Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.60</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">46.01</td>
+<td headers="weight_kg" class="gt_row gt_right">0.03</td>
+<td headers="count" class="gt_row gt_right">2</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">1.1</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">5.9</td>
+<td headers="depth_m" class="gt_row gt_right">41</td>
+<td headers="geometry" class="gt_row gt_center">c(-723745.237556737, 1679316.52763255)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">71</td>
+<td headers="station" class="gt_row gt_left">BB-19</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-07T09:49:02Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">98.91</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">410.97</td>
+<td headers="weight_kg" class="gt_row gt_right">2.17</td>
+<td headers="count" class="gt_row gt_right">9</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">2.2</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">6.9</td>
+<td headers="depth_m" class="gt_row gt_right">36</td>
+<td headers="geometry" class="gt_row gt_center">c(-764405.933888251, 1649009.322445)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">71</td>
+<td headers="station" class="gt_row gt_left">CC-19</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-07T12:11:13Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.28</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">23.46</td>
+<td headers="weight_kg" class="gt_row gt_right">0.01</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">1.4</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">6.3</td>
+<td headers="depth_m" class="gt_row gt_right">39</td>
+<td headers="geometry" class="gt_row gt_center">c(-757928.024817344, 1684741.51172476)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">71</td>
+<td headers="station" class="gt_row gt_left">DD-19</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-07T14:49:33Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.17</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">21.07</td>
+<td headers="weight_kg" class="gt_row gt_right">0.01</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">0.8</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">1.9</td>
+<td headers="depth_m" class="gt_row gt_right">47</td>
+<td headers="geometry" class="gt_row gt_center">c(-751572.751774227, 1721874.87815024)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">71</td>
+<td headers="station" class="gt_row gt_left">CC-21</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-08T07:17:48Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">5.09</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">108.22</td>
+<td headers="weight_kg" class="gt_row gt_right">0.09</td>
+<td headers="count" class="gt_row gt_right">2</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">0.8</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">0.7</td>
+<td headers="depth_m" class="gt_row gt_right">46</td>
+<td headers="geometry" class="gt_row gt_center">c(-828576.454308656, 1705927.50257202)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">71</td>
+<td headers="station" class="gt_row gt_left">CC-20</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-08T09:49:23Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">11.95</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">68.94</td>
+<td headers="weight_kg" class="gt_row gt_right">0.52</td>
+<td headers="count" class="gt_row gt_right">3</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">0.9</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">1.1</td>
+<td headers="depth_m" class="gt_row gt_right">37</td>
+<td headers="geometry" class="gt_row gt_center">c(-794231.505968776, 1696108.02032633)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">71</td>
+<td headers="station" class="gt_row gt_left">AA-21</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-09T07:28:27Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.72</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">40.11</td>
+<td headers="weight_kg" class="gt_row gt_right">0.02</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">7.2</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">7.3</td>
+<td headers="depth_m" class="gt_row gt_right">22</td>
+<td headers="geometry" class="gt_row gt_center">c(-832312.436152678, 1633390.99639511)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">71</td>
+<td headers="station" class="gt_row gt_left">BB-21</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-09T10:15:12Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">1.18</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">65.35</td>
+<td headers="weight_kg" class="gt_row gt_right">0.05</td>
+<td headers="count" class="gt_row gt_right">3</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">5.5</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">7.3</td>
+<td headers="depth_m" class="gt_row gt_right">28</td>
+<td headers="geometry" class="gt_row gt_center">c(-835780.465698207, 1668965.38798825)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">70</td>
+<td headers="station" class="gt_row gt_left">ZZ-22</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-10T10:58:50Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">6.62</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">82.72</td>
+<td headers="weight_kg" class="gt_row gt_right">0.16</td>
+<td headers="count" class="gt_row gt_right">2</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-1.6</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">6.6</td>
+<td headers="depth_m" class="gt_row gt_right">58</td>
+<td headers="geometry" class="gt_row gt_center">c(-889602.875490002, 1602661.85137611)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">81</td>
+<td headers="station" class="gt_row gt_left">ZZ-23</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-10T13:27:07Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">24.32</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">113.29</td>
+<td headers="weight_kg" class="gt_row gt_right">1.29</td>
+<td headers="count" class="gt_row gt_right">6</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-1.4</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">7.2</td>
+<td headers="depth_m" class="gt_row gt_right">63</td>
+<td headers="geometry" class="gt_row gt_center">c(-917572.648487462, 1613602.68187339)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">81</td>
+<td headers="station" class="gt_row gt_left">ZZ-24</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-10T16:15:44Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.99</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">38.10</td>
+<td headers="weight_kg" class="gt_row gt_right">0.05</td>
+<td headers="count" class="gt_row gt_right">2</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-1.7</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">7.7</td>
+<td headers="depth_m" class="gt_row gt_right">71</td>
+<td headers="geometry" class="gt_row gt_center">c(-955930.102535482, 1626074.93457462)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">81</td>
+<td headers="station" class="gt_row gt_left">Y-25</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-11T07:44:29Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.21</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">17.39</td>
+<td headers="weight_kg" class="gt_row gt_right">0.01</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-1.6</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">7.9</td>
+<td headers="depth_m" class="gt_row gt_right">74</td>
+<td headers="geometry" class="gt_row gt_center">c(-997846.199892648, 1599698.48150622)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">70</td>
+<td headers="station" class="gt_row gt_left">Y-22</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-11T15:14:57Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">19.97</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">58.51</td>
+<td headers="weight_kg" class="gt_row gt_right">1.02</td>
+<td headers="count" class="gt_row gt_right">3</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-1.2</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">7.2</td>
+<td headers="depth_m" class="gt_row gt_right">54</td>
+<td headers="geometry" class="gt_row gt_center">c(-892540.63445236, 1568973.05508538)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">43</td>
+<td headers="station" class="gt_row gt_left">Q-23</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-16T10:07:19Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">60.65</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">179.23</td>
+<td headers="weight_kg" class="gt_row gt_right">2.71</td>
+<td headers="count" class="gt_row gt_right">8</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">0.1</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">6.3</td>
+<td headers="depth_m" class="gt_row gt_right">59</td>
+<td headers="geometry" class="gt_row gt_center">c(-981259.17260376, 1287096.75534929)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">70</td>
+<td headers="station" class="gt_row gt_left">X-21</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-12T07:43:25Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">1.12</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">204.07</td>
+<td headers="weight_kg" class="gt_row gt_right">0.06</td>
+<td headers="count" class="gt_row gt_right">10</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-1.2</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">7.3</td>
+<td headers="depth_m" class="gt_row gt_right">45</td>
+<td headers="geometry" class="gt_row gt_center">c(-863048.140308728, 1520288.14015721)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">70</td>
+<td headers="station" class="gt_row gt_left">ZZ-21</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-13T11:04:10Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">18.02</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">132.50</td>
+<td headers="weight_kg" class="gt_row gt_right">0.41</td>
+<td headers="count" class="gt_row gt_right">3</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-1.4</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">5.6</td>
+<td headers="depth_m" class="gt_row gt_right">34</td>
+<td headers="geometry" class="gt_row gt_center">c(-848098.581050178, 1586423.01275728)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">70</td>
+<td headers="station" class="gt_row gt_left">Y-21</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-13T13:13:48Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">50.51</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">43.38</td>
+<td headers="weight_kg" class="gt_row gt_right">2.33</td>
+<td headers="count" class="gt_row gt_right">2</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-1.3</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">6.0</td>
+<td headers="depth_m" class="gt_row gt_right">46</td>
+<td headers="geometry" class="gt_row gt_center">c(-856734.924412506, 1558341.81557978)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">70</td>
+<td headers="station" class="gt_row gt_left">X-22</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-13T16:20:21Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.31</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">41.49</td>
+<td headers="weight_kg" class="gt_row gt_right">0.01</td>
+<td headers="count" class="gt_row gt_right">2</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-1.4</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">7.7</td>
+<td headers="depth_m" class="gt_row gt_right">49</td>
+<td headers="geometry" class="gt_row gt_center">c(-896790.393888741, 1532810.18226598)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">81</td>
+<td headers="station" class="gt_row gt_left">V-23</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-14T10:19:08Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.14</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">22.77</td>
+<td headers="weight_kg" class="gt_row gt_right">0.01</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-0.6</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.3</td>
+<td headers="depth_m" class="gt_row gt_right">56</td>
+<td headers="geometry" class="gt_row gt_center">c(-946617.541143683, 1468937.05904663)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">70</td>
+<td headers="station" class="gt_row gt_left">V-21</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-16T11:11:52Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.08</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">21.08</td>
+<td headers="weight_kg" class="gt_row gt_right">0.00</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">0.2</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">7.6</td>
+<td headers="depth_m" class="gt_row gt_right">49</td>
+<td headers="geometry" class="gt_row gt_center">c(-876067.41856906, 1449385.81605793)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">70</td>
+<td headers="station" class="gt_row gt_left">S-20</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-08-18T07:58:49Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">23.45</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">43.51</td>
+<td headers="weight_kg" class="gt_row gt_right">1.08</td>
+<td headers="count" class="gt_row gt_right">2</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">3.5</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">7.0</td>
+<td headers="depth_m" class="gt_row gt_right">48</td>
+<td headers="geometry" class="gt_row gt_center">c(-860635.399549808, 1326047.78418259)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">82</td>
+<td headers="station" class="gt_row gt_left">S-27</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-27T13:35:58Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">2.38</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">19.21</td>
+<td headers="weight_kg" class="gt_row gt_right">0.12</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">0.0</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.3</td>
+<td headers="depth_m" class="gt_row gt_right">91</td>
+<td headers="geometry" class="gt_row gt_center">c(-1107747.42394718, 1397095.81906557)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">82</td>
+<td headers="station" class="gt_row gt_left">T-25</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-29T08:08:54Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">13.57</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">20.74</td>
+<td headers="weight_kg" class="gt_row gt_right">0.65</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-0.7</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.3</td>
+<td headers="depth_m" class="gt_row gt_right">73</td>
+<td headers="geometry" class="gt_row gt_center">c(-1028378.10747011, 1414613.86418953)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">10</td>
+<td headers="station" class="gt_row gt_left">J-04</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-06-20T17:04:21Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">88.71</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">64.05</td>
+<td headers="weight_kg" class="gt_row gt_right">4.16</td>
+<td headers="count" class="gt_row gt_right">3</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">1.3</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">6.9</td>
+<td headers="depth_m" class="gt_row gt_right">56</td>
+<td headers="geometry" class="gt_row gt_center">c(-698093.87424578, 949909.104172027)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">20</td>
+<td headers="station" class="gt_row gt_left">Q-19</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-02T15:49:56Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">1.40</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">18.68</td>
+<td headers="weight_kg" class="gt_row gt_right">0.07</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">2.7</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">6.0</td>
+<td headers="depth_m" class="gt_row gt_right">44</td>
+<td headers="geometry" class="gt_row gt_center">c(-836300.713331624, 1243151.15986827)</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+</div>
+</div>
+<!-- This child doc will, unless otherwise specified, -->
+<!-- inherit all of the formatting of the parent qmd -->
+<!-- Note that the double curly brackets  can be used to inherit content from the global environment -->
+</section>
+<section id="crystallichthys-cyclospilus" class="level2">
+<h2 class="anchored" data-anchor-id="crystallichthys-cyclospilus"><strong><em>Crystallichthys cyclospilus</em></strong></h2>
+<p>The geographic distribution of <em>Crystallichthys cyclospilus</em> (species code: 22206) (<a href="#fig-map-2022-22206">Figure&nbsp;4</a>), and the raw data that went into that map (<a href="#tbl-raw-2022-22206">Table&nbsp;2</a>).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-map-2022-22206" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="parent_files/figure-html/fig-map-2022-22206-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;4: Map of different <em>Crystallichthys cyclospilus</em> snailfish distributions in 2022.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-raw-2022-22206" class="anchored">
+
+<div id="thzejpyqow" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#thzejpyqow table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#thzejpyqow thead, #thzejpyqow tbody, #thzejpyqow tfoot, #thzejpyqow tr, #thzejpyqow td, #thzejpyqow th {
+  border-style: none;
+}
+
+#thzejpyqow p {
+  margin: 0;
+  padding: 0;
+}
+
+#thzejpyqow .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#thzejpyqow .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#thzejpyqow .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#thzejpyqow .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#thzejpyqow .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#thzejpyqow .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#thzejpyqow .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#thzejpyqow .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#thzejpyqow .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#thzejpyqow .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#thzejpyqow .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#thzejpyqow .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#thzejpyqow .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#thzejpyqow .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#thzejpyqow .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#thzejpyqow .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#thzejpyqow .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#thzejpyqow .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#thzejpyqow .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#thzejpyqow .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#thzejpyqow .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#thzejpyqow .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#thzejpyqow .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#thzejpyqow .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#thzejpyqow .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#thzejpyqow .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#thzejpyqow .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#thzejpyqow .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#thzejpyqow .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#thzejpyqow .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#thzejpyqow .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#thzejpyqow .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#thzejpyqow .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#thzejpyqow .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#thzejpyqow .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#thzejpyqow .gt_left {
+  text-align: left;
+}
+
+#thzejpyqow .gt_center {
+  text-align: center;
+}
+
+#thzejpyqow .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#thzejpyqow .gt_font_normal {
+  font-weight: normal;
+}
+
+#thzejpyqow .gt_font_bold {
+  font-weight: bold;
+}
+
+#thzejpyqow .gt_font_italic {
+  font-style: italic;
+}
+
+#thzejpyqow .gt_super {
+  font-size: 65%;
+}
+
+#thzejpyqow .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#thzejpyqow .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#thzejpyqow .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#thzejpyqow .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#thzejpyqow .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#thzejpyqow .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#thzejpyqow .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#thzejpyqow .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#thzejpyqow div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false"><caption>Table&nbsp;2:  <p>Table of <em>Crystallichthys cyclospilus</em> catch-per-unit-effort
+in 2022.</p> </caption>
+  <thead>
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="stratum">stratum</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="station">station</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="vessel_name">vessel_name</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="date_time">date_time</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="cpue_kgkm2">cpue_kgkm2</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="cpue_nokm2">cpue_nokm2</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="weight_kg">weight_kg</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="count">count</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="bottom_temperature_c">bottom_temperature_c</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="surface_temperature_c">surface_temperature_c</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="depth_m">depth_m</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="geometry">geometry</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="stratum" class="gt_row gt_right">31</td>
+<td headers="station" class="gt_row gt_left">B-08</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-06-11T13:03:37Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">2.65</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">22.09</td>
+<td headers="weight_kg" class="gt_row gt_right">0.12</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">3.7</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.5</td>
+<td headers="depth_m" class="gt_row gt_right">51</td>
+<td headers="geometry" class="gt_row gt_center">c(-596047.051601733, 634189.76370519)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">50</td>
+<td headers="station" class="gt_row gt_left">A-04</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-06-13T07:08:52Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">33.64</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">39.11</td>
+<td headers="weight_kg" class="gt_row gt_right">1.72</td>
+<td headers="count" class="gt_row gt_right">2</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">4.0</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">6.6</td>
+<td headers="depth_m" class="gt_row gt_right">130</td>
+<td headers="geometry" class="gt_row gt_center">c(-748376.294958285, 620299.07953191)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">50</td>
+<td headers="station" class="gt_row gt_left">B-03</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-06-15T13:29:18Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">6.31</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">18.82</td>
+<td headers="weight_kg" class="gt_row gt_right">0.34</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">4.0</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">7.7</td>
+<td headers="depth_m" class="gt_row gt_right">132</td>
+<td headers="geometry" class="gt_row gt_center">c(-779485.173962386, 666245.019314862)</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+</div>
+</div>
+<!-- This child doc will, unless otherwise specified, -->
+<!-- inherit all of the formatting of the parent qmd -->
+<!-- Note that the double curly brackets  can be used to inherit content from the global environment -->
+</section>
+<section id="careproctus-sp." class="level2">
+<h2 class="anchored" data-anchor-id="careproctus-sp."><strong><em>Careproctus</em> sp.</strong></h2>
+<p>The geographic distribution of <em>Careproctus</em> sp. (species code: 22219) (<a href="#fig-map-2022-22219">Figure&nbsp;5</a>), and the raw data that went into that map (<a href="#tbl-raw-2022-22219">Table&nbsp;3</a>).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-map-2022-22219" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="parent_files/figure-html/fig-map-2022-22219-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;5: Map of different <em>Careproctus</em> sp. snailfish distributions in 2022.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-raw-2022-22219" class="anchored">
+
+<div id="edabzsryfy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#edabzsryfy table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#edabzsryfy thead, #edabzsryfy tbody, #edabzsryfy tfoot, #edabzsryfy tr, #edabzsryfy td, #edabzsryfy th {
+  border-style: none;
+}
+
+#edabzsryfy p {
+  margin: 0;
+  padding: 0;
+}
+
+#edabzsryfy .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#edabzsryfy .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#edabzsryfy .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#edabzsryfy .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#edabzsryfy .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#edabzsryfy .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#edabzsryfy .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#edabzsryfy .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#edabzsryfy .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#edabzsryfy .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#edabzsryfy .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#edabzsryfy .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#edabzsryfy .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#edabzsryfy .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#edabzsryfy .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#edabzsryfy .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#edabzsryfy .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#edabzsryfy .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#edabzsryfy .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#edabzsryfy .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#edabzsryfy .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#edabzsryfy .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#edabzsryfy .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#edabzsryfy .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#edabzsryfy .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#edabzsryfy .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#edabzsryfy .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#edabzsryfy .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#edabzsryfy .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#edabzsryfy .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#edabzsryfy .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#edabzsryfy .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#edabzsryfy .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#edabzsryfy .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#edabzsryfy .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#edabzsryfy .gt_left {
+  text-align: left;
+}
+
+#edabzsryfy .gt_center {
+  text-align: center;
+}
+
+#edabzsryfy .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#edabzsryfy .gt_font_normal {
+  font-weight: normal;
+}
+
+#edabzsryfy .gt_font_bold {
+  font-weight: bold;
+}
+
+#edabzsryfy .gt_font_italic {
+  font-style: italic;
+}
+
+#edabzsryfy .gt_super {
+  font-size: 65%;
+}
+
+#edabzsryfy .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#edabzsryfy .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#edabzsryfy .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#edabzsryfy .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#edabzsryfy .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#edabzsryfy .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#edabzsryfy .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#edabzsryfy .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#edabzsryfy div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false"><caption>Table&nbsp;3:  <p>Table of <em>Careproctus</em> sp. catch-per-unit-effort in 2022.</p> </caption>
+  <thead>
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="stratum">stratum</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="station">station</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="vessel_name">vessel_name</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="date_time">date_time</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="cpue_kgkm2">cpue_kgkm2</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="cpue_nokm2">cpue_nokm2</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="weight_kg">weight_kg</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="count">count</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="bottom_temperature_c">bottom_temperature_c</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="surface_temperature_c">surface_temperature_c</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="depth_m">depth_m</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="geometry">geometry</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="stratum" class="gt_row gt_right">43</td>
+<td headers="station" class="gt_row gt_left">N-24</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-16T13:42:55Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.96</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">38.34</td>
+<td headers="weight_kg" class="gt_row gt_right">0.05</td>
+<td headers="count" class="gt_row gt_right">2</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-0.1</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.2</td>
+<td headers="depth_m" class="gt_row gt_right">88</td>
+<td headers="geometry" class="gt_row gt_center">c(-1035972.70916969, 1181642.88166375)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">43</td>
+<td headers="station" class="gt_row gt_left">O-24</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-16T16:47:21Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">2.30</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">19.52</td>
+<td headers="weight_kg" class="gt_row gt_right">0.12</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-0.5</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.1</td>
+<td headers="depth_m" class="gt_row gt_right">84</td>
+<td headers="geometry" class="gt_row gt_center">c(-1029026.77104535, 1218938.99290605)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">43</td>
+<td headers="station" class="gt_row gt_left">P-25</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-17T07:27:16Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">3.05</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">36.36</td>
+<td headers="weight_kg" class="gt_row gt_right">0.08</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">0.1</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.0</td>
+<td headers="depth_m" class="gt_row gt_right">75</td>
+<td headers="geometry" class="gt_row gt_center">c(-1059042.80764475, 1268011.7070246)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">43</td>
+<td headers="station" class="gt_row gt_left">QP2625</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-17T10:32:35Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.54</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">18.07</td>
+<td headers="weight_kg" class="gt_row gt_right">0.03</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-0.2</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.1</td>
+<td headers="depth_m" class="gt_row gt_right">88</td>
+<td headers="geometry" class="gt_row gt_center">c(-1078708.5830579, 1287708.92271327)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">61</td>
+<td headers="station" class="gt_row gt_left">O-30</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-24T07:43:15Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">2.11</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">77.58</td>
+<td headers="weight_kg" class="gt_row gt_right">0.11</td>
+<td headers="count" class="gt_row gt_right">4</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">2.3</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">9.6</td>
+<td headers="depth_m" class="gt_row gt_right">136</td>
+<td headers="geometry" class="gt_row gt_center">c(-1240556.72503343, 1287583.67390171)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">61</td>
+<td headers="station" class="gt_row gt_left">P-31</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-24T13:52:47Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.96</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">56.45</td>
+<td headers="weight_kg" class="gt_row gt_right">0.05</td>
+<td headers="count" class="gt_row gt_right">3</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">2.0</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">9.6</td>
+<td headers="depth_m" class="gt_row gt_right">136</td>
+<td headers="geometry" class="gt_row gt_center">c(-1264144.91402108, 1335716.70357495)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">61</td>
+<td headers="station" class="gt_row gt_left">Q-31</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-26T07:46:36Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">6.62</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">242.70</td>
+<td headers="weight_kg" class="gt_row gt_right">0.38</td>
+<td headers="count" class="gt_row gt_right">14</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">1.6</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">9.3</td>
+<td headers="depth_m" class="gt_row gt_right">149</td>
+<td headers="geometry" class="gt_row gt_center">c(-1259406.19057223, 1375368.02651069)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">61</td>
+<td headers="station" class="gt_row gt_left">Q-30</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-26T10:46:10Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">1.94</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">88.10</td>
+<td headers="weight_kg" class="gt_row gt_right">0.11</td>
+<td headers="count" class="gt_row gt_right">5</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">1.9</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">9.4</td>
+<td headers="depth_m" class="gt_row gt_right">136</td>
+<td headers="geometry" class="gt_row gt_center">c(-1225964.59801677, 1361105.60808985)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">61</td>
+<td headers="station" class="gt_row gt_left">R-30</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-26T13:30:40Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">8.52</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">104.28</td>
+<td headers="weight_kg" class="gt_row gt_right">0.49</td>
+<td headers="count" class="gt_row gt_right">6</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">1.6</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">9.3</td>
+<td headers="depth_m" class="gt_row gt_right">129</td>
+<td headers="geometry" class="gt_row gt_center">c(-1217998.62650545, 1397340.84863644)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">90</td>
+<td headers="station" class="gt_row gt_left">S-31</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-26T17:17:34Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">10.39</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">348.06</td>
+<td headers="weight_kg" class="gt_row gt_right">0.60</td>
+<td headers="count" class="gt_row gt_right">20</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">1.5</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">9.6</td>
+<td headers="depth_m" class="gt_row gt_right">135</td>
+<td headers="geometry" class="gt_row gt_center">c(-1246821.54194279, 1447708.25814408)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">61</td>
+<td headers="station" class="gt_row gt_left">R-32</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-25T07:39:02Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">1.80</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">63.29</td>
+<td headers="weight_kg" class="gt_row gt_right">0.11</td>
+<td headers="count" class="gt_row gt_right">4</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">2.0</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">9.4</td>
+<td headers="depth_m" class="gt_row gt_right">161</td>
+<td headers="geometry" class="gt_row gt_center">c(-1288770.67291262, 1423553.68871449)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">61</td>
+<td headers="station" class="gt_row gt_left">R-31</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-25T10:47:34Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">20.99</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">415.94</td>
+<td headers="weight_kg" class="gt_row gt_right">1.06</td>
+<td headers="count" class="gt_row gt_right">21</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">1.5</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">9.4</td>
+<td headers="depth_m" class="gt_row gt_right">146</td>
+<td headers="geometry" class="gt_row gt_center">c(-1254340.71322699, 1411005.68840481)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">90</td>
+<td headers="station" class="gt_row gt_left">S-30</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-27T07:34:23Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">12.63</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">298.06</td>
+<td headers="weight_kg" class="gt_row gt_right">0.68</td>
+<td headers="count" class="gt_row gt_right">16</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">1.6</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">9.2</td>
+<td headers="depth_m" class="gt_row gt_right">122</td>
+<td headers="geometry" class="gt_row gt_center">c(-1213799.3435672, 1435702.50424436)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">90</td>
+<td headers="station" class="gt_row gt_left">T-30</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-27T10:14:39Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">22.02</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">330.26</td>
+<td headers="weight_kg" class="gt_row gt_right">1.20</td>
+<td headers="count" class="gt_row gt_right">18</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">1.2</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">9.0</td>
+<td headers="depth_m" class="gt_row gt_right">116</td>
+<td headers="geometry" class="gt_row gt_center">c(-1200858.36506966, 1470835.15792308)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">90</td>
+<td headers="station" class="gt_row gt_left">U-29</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-27T15:43:43Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">2.87</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">17.92</td>
+<td headers="weight_kg" class="gt_row gt_right">0.16</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">0.0</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.2</td>
+<td headers="depth_m" class="gt_row gt_right">105</td>
+<td headers="geometry" class="gt_row gt_center">c(-1163777.26121258, 1495876.56910104)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">82</td>
+<td headers="station" class="gt_row gt_left">U-28</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-27T18:36:25Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">11.76</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">219.68</td>
+<td headers="weight_kg" class="gt_row gt_right">0.70</td>
+<td headers="count" class="gt_row gt_right">13</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-1.5</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">7.9</td>
+<td headers="depth_m" class="gt_row gt_right">95</td>
+<td headers="geometry" class="gt_row gt_center">c(-1129412.30882487, 1485763.88572074)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">82</td>
+<td headers="station" class="gt_row gt_left">V-28</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-28T07:25:46Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">12.20</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">274.93</td>
+<td headers="weight_kg" class="gt_row gt_right">0.71</td>
+<td headers="count" class="gt_row gt_right">16</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-1.6</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.3</td>
+<td headers="depth_m" class="gt_row gt_right">93</td>
+<td headers="geometry" class="gt_row gt_center">c(-1120793.98108651, 1522212.3609948)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">82</td>
+<td headers="station" class="gt_row gt_left">V-27</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-28T09:56:06Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.15</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">18.48</td>
+<td headers="weight_kg" class="gt_row gt_right">0.01</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-1.6</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.5</td>
+<td headers="depth_m" class="gt_row gt_right">81</td>
+<td headers="geometry" class="gt_row gt_center">c(-1088497.63571354, 1511215.81265502)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">82</td>
+<td headers="station" class="gt_row gt_left">V-26</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-28T12:38:25Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.33</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">20.36</td>
+<td headers="weight_kg" class="gt_row gt_right">0.02</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-1.3</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.4</td>
+<td headers="depth_m" class="gt_row gt_right">73</td>
+<td headers="geometry" class="gt_row gt_center">c(-1056269.65323651, 1500680.32601684)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">81</td>
+<td headers="station" class="gt_row gt_left">W-27</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-29T16:02:49Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.11</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">17.91</td>
+<td headers="weight_kg" class="gt_row gt_right">0.01</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-1.6</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.4</td>
+<td headers="depth_m" class="gt_row gt_right">78</td>
+<td headers="geometry" class="gt_row gt_center">c(-1079677.74576938, 1547519.1245308)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">43</td>
+<td headers="station" class="gt_row gt_left">O-23</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-14T07:22:14Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">2.42</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">19.53</td>
+<td headers="weight_kg" class="gt_row gt_right">0.12</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-0.7</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">7.9</td>
+<td headers="depth_m" class="gt_row gt_right">77</td>
+<td headers="geometry" class="gt_row gt_center">c(-990069.717112529, 1207651.53793713)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">41</td>
+<td headers="station" class="gt_row gt_left">R-26</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-18T07:19:29Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.50</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">20.84</td>
+<td headers="weight_kg" class="gt_row gt_right">0.02</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-0.5</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.2</td>
+<td headers="depth_m" class="gt_row gt_right">86</td>
+<td headers="geometry" class="gt_row gt_center">c(-1080190.24824617, 1354722.50692837)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">43</td>
+<td headers="station" class="gt_row gt_left">QP2726</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-18T12:33:36Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.62</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">20.82</td>
+<td headers="weight_kg" class="gt_row gt_right">0.03</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">0.8</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.6</td>
+<td headers="depth_m" class="gt_row gt_right">99</td>
+<td headers="geometry" class="gt_row gt_center">c(-1107139.16986187, 1305124.82307023)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">62</td>
+<td headers="station" class="gt_row gt_left">O-26</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-19T10:02:16Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">2.42</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">138.72</td>
+<td headers="weight_kg" class="gt_row gt_right">0.12</td>
+<td headers="count" class="gt_row gt_right">7</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">0.6</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.5</td>
+<td headers="depth_m" class="gt_row gt_right">103</td>
+<td headers="geometry" class="gt_row gt_center">c(-1096847.1888388, 1241412.04466325)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">43</td>
+<td headers="station" class="gt_row gt_left">ON2625</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-19T12:49:29Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">3.17</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">154.85</td>
+<td headers="weight_kg" class="gt_row gt_right">0.16</td>
+<td headers="count" class="gt_row gt_right">8</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">0.7</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.7</td>
+<td headers="depth_m" class="gt_row gt_right">101</td>
+<td headers="geometry" class="gt_row gt_center">c(-1083660.41261739, 1219057.97101317)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">62</td>
+<td headers="station" class="gt_row gt_left">N-26</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-19T16:02:25Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">2.08</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">75.53</td>
+<td headers="weight_kg" class="gt_row gt_right">0.11</td>
+<td headers="count" class="gt_row gt_right">4</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">1.4</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.8</td>
+<td headers="depth_m" class="gt_row gt_right">109</td>
+<td headers="geometry" class="gt_row gt_center">c(-1104008.71664063, 1205889.90287527)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">61</td>
+<td headers="station" class="gt_row gt_left">N-30</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-22T10:34:43Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">2.26</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">56.41</td>
+<td headers="weight_kg" class="gt_row gt_right">0.12</td>
+<td headers="count" class="gt_row gt_right">3</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">2.4</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">9.3</td>
+<td headers="depth_m" class="gt_row gt_right">135</td>
+<td headers="geometry" class="gt_row gt_center">c(-1244828.44840724, 1248187.4915421)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">62</td>
+<td headers="station" class="gt_row gt_left">PO2726</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-23T07:23:06Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">25.38</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">96.58</td>
+<td headers="weight_kg" class="gt_row gt_right">1.31</td>
+<td headers="count" class="gt_row gt_right">5</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">0.9</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">9.0</td>
+<td headers="depth_m" class="gt_row gt_right">105</td>
+<td headers="geometry" class="gt_row gt_center">c(-1110424.12646284, 1264167.58204528)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">62</td>
+<td headers="station" class="gt_row gt_left">P-27</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-23T09:36:06Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">1.89</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">59.01</td>
+<td headers="weight_kg" class="gt_row gt_right">0.10</td>
+<td headers="count" class="gt_row gt_right">3</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">1.1</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.8</td>
+<td headers="depth_m" class="gt_row gt_right">108</td>
+<td headers="geometry" class="gt_row gt_center">c(-1126634.5086729, 1285056.63193772)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">61</td>
+<td headers="station" class="gt_row gt_left">O-29</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-23T18:05:30Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.99</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">38.75</td>
+<td headers="weight_kg" class="gt_row gt_right">0.05</td>
+<td headers="count" class="gt_row gt_right">2</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">1.9</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">9.6</td>
+<td headers="depth_m" class="gt_row gt_right">136</td>
+<td headers="geometry" class="gt_row gt_center">c(-1202486.06518814, 1274206.50249892)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">61</td>
+<td headers="station" class="gt_row gt_left">P-29</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-24T12:31:05Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">23.56</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">119.18</td>
+<td headers="weight_kg" class="gt_row gt_right">1.19</td>
+<td headers="count" class="gt_row gt_right">6</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">1.9</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">9.5</td>
+<td headers="depth_m" class="gt_row gt_right">128</td>
+<td headers="geometry" class="gt_row gt_center">c(-1195554.5217077, 1312711.25470147)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">61</td>
+<td headers="station" class="gt_row gt_left">Q-29</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-24T15:30:31Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">1.40</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">56.57</td>
+<td headers="weight_kg" class="gt_row gt_right">0.07</td>
+<td headers="count" class="gt_row gt_right">3</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">1.3</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">9.0</td>
+<td headers="depth_m" class="gt_row gt_right">121</td>
+<td headers="geometry" class="gt_row gt_center">c(-1190111.6439988, 1346997.83861463)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">61</td>
+<td headers="station" class="gt_row gt_left">R-29</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-25T08:12:49Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.72</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">20.05</td>
+<td headers="weight_kg" class="gt_row gt_right">0.04</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">1.5</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.8</td>
+<td headers="depth_m" class="gt_row gt_right">118</td>
+<td headers="geometry" class="gt_row gt_center">c(-1187180.93762668, 1389557.90107838)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">90</td>
+<td headers="station" class="gt_row gt_left">S-29</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-25T11:28:28Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.97</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">57.34</td>
+<td headers="weight_kg" class="gt_row gt_right">0.05</td>
+<td headers="count" class="gt_row gt_right">3</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">1.2</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.5</td>
+<td headers="depth_m" class="gt_row gt_right">111</td>
+<td headers="geometry" class="gt_row gt_center">c(-1178275.66997848, 1424082.2503786)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">90</td>
+<td headers="station" class="gt_row gt_left">T-28</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-26T08:09:25Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">5.53</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">93.47</td>
+<td headers="weight_kg" class="gt_row gt_right">0.30</td>
+<td headers="count" class="gt_row gt_right">5</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-0.9</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.3</td>
+<td headers="depth_m" class="gt_row gt_right">96</td>
+<td headers="geometry" class="gt_row gt_center">c(-1133720.56403377, 1451631.0670467)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">90</td>
+<td headers="station" class="gt_row gt_left">S-28</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-26T10:57:25Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">1.00</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">98.09</td>
+<td headers="weight_kg" class="gt_row gt_right">0.05</td>
+<td headers="count" class="gt_row gt_right">5</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">0.6</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.2</td>
+<td headers="depth_m" class="gt_row gt_right">100</td>
+<td headers="geometry" class="gt_row gt_center">c(-1139584.47171755, 1413528.25825922)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">61</td>
+<td headers="station" class="gt_row gt_left">R-28</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-26T13:59:32Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">1.34</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">76.66</td>
+<td headers="weight_kg" class="gt_row gt_right">0.07</td>
+<td headers="count" class="gt_row gt_right">4</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">1.1</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.6</td>
+<td headers="depth_m" class="gt_row gt_right">106</td>
+<td headers="geometry" class="gt_row gt_center">c(-1147230.84627752, 1377248.3573164)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">82</td>
+<td headers="station" class="gt_row gt_left">U-26</td>
+<td headers="vessel_name" class="gt_row gt_left">VESTERAALEN</td>
+<td headers="date_time" class="gt_row gt_left">2022-07-28T10:45:22Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">5.82</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">40.98</td>
+<td headers="weight_kg" class="gt_row gt_right">0.28</td>
+<td headers="count" class="gt_row gt_right">2</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">-1.4</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.6</td>
+<td headers="depth_m" class="gt_row gt_right">76</td>
+<td headers="geometry" class="gt_row gt_center">c(-1064959.61130588, 1464464.2396475)</td></tr>
+    <tr><td headers="stratum" class="gt_row gt_right">50</td>
+<td headers="station" class="gt_row gt_left">E-01</td>
+<td headers="vessel_name" class="gt_row gt_left">ALASKA KNIGHT</td>
+<td headers="date_time" class="gt_row gt_left">2022-06-24T13:53:25Z</td>
+<td headers="cpue_kgkm2" class="gt_row gt_right">0.36</td>
+<td headers="cpue_nokm2" class="gt_row gt_right">18.12</td>
+<td headers="weight_kg" class="gt_row gt_right">0.02</td>
+<td headers="count" class="gt_row gt_right">1</td>
+<td headers="bottom_temperature_c" class="gt_row gt_right">3.7</td>
+<td headers="surface_temperature_c" class="gt_row gt_right">8.0</td>
+<td headers="depth_m" class="gt_row gt_right">129</td>
+<td headers="geometry" class="gt_row gt_center">c(-836968.803190185, 790345.354332882)</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="works-cited" class="level1">
+<h1>Works Cited</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
+<div id="ref-2022NEBS2023" class="csl-entry" role="listitem">
+Markowitz, E. H., Dawson, E. J., Anderson, A. B., Rohan, S. K., Charriere, N. E., Prohaska, B. K., and Stevenson, D. E. (2023). <em>Results of the 2022 eastern and northern <span>Bering Sea</span> continental shelf bottom trawl survey of groundfish and invertebrate fauna</em> (NOAA Tech. Memo. NMFS-AFSC-469; p. 213). <span>U.S. Dep. Commer.</span> <a href="https://doi.org/10.25923/rt50-th19">https://doi.org/10.25923/rt50-th19</a>
+</div>
+<div id="ref-FOSSAFSCData" class="csl-entry" role="listitem">
+NOAA Fisheries Alaska Fisheries Science Center. (2024). <em>Fisheries one stop shop public data: RACE division bottom trawl survey data query</em>. https://www.fisheries.noaa.gov/foss; <span>U.S. Dep. Commer.</span>
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

@@ -1,0 +1,146 @@
+---
+title: "`r paste0('Snailfish found in the Eastern Bering Sea in ', params$report_year)`"
+subtitle: "`r paste0('DRAFT: ', format(Sys.time(), '%B %d, %Y'))`"
+csl: "https://raw.githubusercontent.com/citation-style-language/styles/master/apa-no-ampersand.csl"
+bibliography: "https://raw.githubusercontent.com/afsc-gap-products/citations/main/cite/bibliography.bib"
+link-citations: true
+format: 
+  html: 
+    theme: cosmo
+  docx:
+    reference-doc: "code/styles_reference.docx" 
+  pdf: 
+    geometry:
+      - top=0.75in
+      - right=0.75in
+      - bottom=0.75in
+      - left=0.75in
+      - heightrounded
+    number-sections: true
+    toc: true
+    toc-depth: 3
+execute:
+  warning: false
+  echo: false
+  message: false
+  error: false
+params: 
+  citation: "@2022NEBS2023"
+  report_year: 2022
+---
+
+```{r load-packages}
+# Install libraries ------------------------------------------------------------
+PKG <- c(
+  "httr", 
+  "curl",
+  "jsonlite", 
+  "gt", 
+  "ggplot2", 
+  "sf", 
+  "dplyr",
+  "magrittr", 
+  "akgfmaps" # devtools::install_github("afsc-gap-products/akgfmaps", build_vignettes = TRUE)
+)
+for (p in PKG) { # this loops through each package, 
+  if(!require(p,character.only = TRUE)) {  # checks to see if you have the package installed
+    if (p == "akgfmaps") {
+      devtools::install_github("afsc-gap-products/akgfmaps", build_vignettes = TRUE)
+    } else {
+    install.packages(p, verbose = FALSE) # installs the package if it is not installed
+    }
+    require(p,character.only = TRUE)} # and loads the package library
+}
+```
+
+```{r load-data}
+# Download data: pull data from FOSS API for AFSC bottom trawl survey data. 
+
+# collect haul data ------------------------------------------------------------
+res <- httr::GET(url = 
+                   paste0("https://apps-st.fisheries.noaa.gov/ods/foss/afsc_groundfish_survey_haul/", 
+                          '?limit=10000&q={"year":"', {{params$report_year}},
+                              '","srvy":{"$like":"%25BS%25"}}}'))
+## subset to the actual data output from the above function
+data_haul <- jsonlite::fromJSON(base::rawToChar(res$content))$items %>% 
+  dplyr::select(-links)
+
+## Transform species data for mapping
+data_haul <- sf::st_as_sf(data_haul, coords = c("longitude_dd_start","latitude_dd_start"))
+data_haul <- sf::st_set_crs(data_haul, "+proj=longlat +datum=WGS84") 
+data_haul <- sf::st_transform(x = data_haul, crs = "EPSG:3338")
+
+# # collect species data --------------------------------------------------------
+res <- httr::GET(url =
+                   paste0("https://apps-st.fisheries.noaa.gov/ods/foss/afsc_groundfish_survey_species/",
+                              # '?limit=10000&q={"common_name":{"$like":"%25snailfish%25"}}'))
+                              # '?limit=10000&q={"species_code":{"$gt":22199,"$lt":22300}}'))
+                              # '?limit=10000&q={"species_code":{"$gt":22199},"species_code":{"$lt":22300}}'))
+                              '?limit=10000'))
+data_species <- jsonlite::fromJSON(base::rawToChar(res$content))$items %>%
+  dplyr::select(-links) %>% 
+  dplyr::filter(species_code >= 22200 & species_code <= 22299) %>%
+  dplyr::distinct() 
+
+# collect catch data -----------------------------------------------------------
+data_catch <- c()
+for (i in 1:nrow(data_species)) {
+res <- httr::GET(url = 
+                   paste0('https://apps-st.fisheries.noaa.gov/ods/foss/afsc_groundfish_survey_catch/?limit=10000&q={"species_code":"',data_species$species_code[i],'"}'))
+
+# subset to the actual data output from the above function
+data_catch <- data_catch %>% 
+  dplyr::bind_rows(jsonlite::fromJSON(base::rawToChar(res$content))$items %>% 
+  dplyr::select(-links))
+}
+# Bind catch and haul data
+dat0 <- data_haul %>% 
+  dplyr::left_join(data_catch) %>% 
+  dplyr::left_join(data_species) %>% 
+  dplyr::filter(!is.na(cpue_kgkm2))
+
+# Shapefiles for mapping
+reg_dat <- akgfmaps::get_base_layers(select.region = 'bs.all',
+                                     set.crs = "EPSG:3338")
+```
+
+```{r spp-caught}
+# What species were caught this year?
+spp <- unique(dat0$scientific_name)
+```
+
+<!-- This should work the same as the next chunk: -->
+<!-- {{< include _child_intro.qmd >}} -->
+
+```{r child-doc}
+src <- knitr::knit_expand(file = here::here('code','child_intro.qmd')) 
+```
+
+`r paste(knitr::knit(text = unlist(src)), collapse = '\n')`
+
+# Methods
+Quarto has support for some fancy accessories that are helpful for reports. For example, you can create flowcharts using tools like `{mermaid}`.
+
+```{mermaid}
+flowchart LR
+  A[Survey data] --> B(Processed data products)
+  B --> C{R code and Markdown}
+  C --> D[Presentations]
+  C --> E[Data process reports]
+```
+
+# Species chapters
+
+```{r child-speices}
+src <- c()
+for (jj in unique(dat0$species_code)) {
+  src[[jj]] <- knitr::knit_expand(here::here("code", 'child_species.qmd'))
+}
+```
+
+`r paste(knitr::knit(text = unlist(src)), collapse = '\n')`
+
+# Works Cited
+
+<div id="refs"></div>
+
