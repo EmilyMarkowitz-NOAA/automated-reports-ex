@@ -21,3 +21,6 @@ for (report_year in c(2021:2024)) { # A few years to cycle through
             overwrite = TRUE)
   file.remove(from = here::here(paste0("report_",report_year,".html")))
 }
+file.copy(from = here::here("code", paste0("report_",report_year,".html")),
+          to = here::here("docs", "index.html"), 
+          overwrite = TRUE)
